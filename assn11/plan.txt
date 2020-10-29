@@ -1,0 +1,52 @@
+requirement specification
+    create a program that will draw circles and rectangles in a circular pattern with rainbow colors.
+
+system analysis
+    centerPosition = offset + radius
+
+system design
+    1. define all the functions
+        a. reset()
+        b.setup()
+            i. configure turtle to quick draw
+            ii. configure turtle to have a window of 1000 x 800
+        c.drawRectanglePattern()
+            i. use appropriate parameters
+            ii. it should call drawRectangle()
+        drawRectangle()
+            i. appropriate parameters
+            ii. should draw single rectangle
+        drawCirclePattern()
+            i. appropriate parameters
+        drawSuperPattern()
+            i. use appropriate parameters
+            ii. randomly draw Rectangle and circle patterns, each based on random variables
+            iii. use reasonable random values, some can be negative, so that patterns draw on screen
+        setRandomColor()
+            i. don't use parameters
+            ii. Set turtle to draw in a random color
+            iii. use at least 3 colors
+        done()
+            i. Called when user quits
+            ii. Keeps the turtle window open
+    2. circle pattern
+        center position - x and y center point of circular pattern drawn
+        offset - the distance from the center point to starting point on rectangle
+            a. center point is radius + offset
+        count - number of circles drawn within 360 pattern
+        each drawn with a new random color
+    3. rectangle pattern
+        center position - center of whole pattern drawn, x and y point
+        offset - distance from center to starting point on rectangle
+        width
+        height
+        count - how many shapes drawn
+        rotation - The number of degrees each rectangle is rotated in relation to the line from the Center Position to the starting corner of the rectangle
+        each drawn with a new random color
+    4. End with 3 options
+        a. two of which keeps playing, but one resets the board
+        b. the other one quits playing
+
+implimentation - code
+
+test - if output is as expected

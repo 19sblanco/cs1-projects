@@ -1,0 +1,59 @@
+requirement specification:
+    create a card constructer the loop through creating a deck
+
+system anaysis:
+    get card value:
+        a = cardValue
+        b = paw
+        c = coin
+        a = (self.__id - c) / 2 - 20 * b + 1
+
+system design:
+    1. create card class
+        a. have it take an id as parameter
+        b. have it also have a paw, coin, and card value
+        c. get coin of an input (which is mod 2)
+        d. get paw of an input (which is // 40)
+        e. using those, use the formula above to find the card value
+    2. create deck class
+        a. have his create a shuffled deck from card module
+        b. create a function named shuffle
+        c. create a function named draw
+        d. have the __init__ use shuffle
+    3. main
+        a. create a instance of deck
+        b. draw from deck to make hand of 30 cards
+        c. make a menu
+            i. option 1
+                j. sort by value using loop
+                jj. insertion sort
+            ii. option 2
+                j. sort by id
+                jj. bubble osrt
+            iii. option 3
+                j. search for card given parameters
+                jj. check to see if in hand
+                jjj. return boolean
+            iv. option 4
+                j. shuffle deck and draw new hand
+            v. option 5 (exit)
+
+
+Card
+*********
+id - int
+*********
+getId - return id
+getValue - return val
+getCoin - return coin
+getPaw - return paw
+
+
+****************
+
+Deck
+**********
+Cards - card
+**********
+shuffle - returns 30 random cards from deck
+draw - pulls top card from deck

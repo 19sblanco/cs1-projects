@@ -1,0 +1,31 @@
+requirement specification
+    make a game of black jack, without doubling down or insurance
+
+system anaysis
+    no formulas
+
+system design
+    1. make a multi dimentional list with players and their hands
+    2. make a list for their money
+    3. make a list for their bets
+    4. create while loop for game, while play
+    5. create logic for players turns
+        a. create new instant of deck
+        b. if they have money go through turn
+        c. have them hit for a card, till they bust or till they hold
+        d. aces are at 11 till they are over 21, then set to 1
+    6. create the dealers turn
+        a. dealer hits till they bust or they reach 17
+    7. check the totals of players, check total of dealer
+    8. from 7. decide the winners
+    9. if they quit the game print thanks for playing and players with the biggest money to the smallest money
+
+implimentation
+    code
+
+test:
+    1, playing it
+        worked
+
+    2, playing it with friends
+        worked

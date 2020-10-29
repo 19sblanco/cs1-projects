@@ -1,0 +1,80 @@
+Task 1
+
+requirement specifications
+    draw a chessboard given inputs, starting point, width and height. Using object oriented programming
+system analysis
+    no fomulas
+system design
+    1. create a class for the chessboard
+    2. in that class make three required functions
+        a. drawChessboard
+            i. using for loop
+        b. drawRectangle
+            i. using for loop
+        c. DrawAllRectangle
+            i. using function to drawRow
+            ii. repeat until whole board is drawn
+    3. make another function
+        a. drawRow
+    4. make fit required code in task1 module
+    5. in task1 import the chessboard
+implimentation
+    code
+test - passed
+looks like what it should
+
+Chessboard
+**********
+startX - int
+startY - int
+width - int
+height - int
+**********
+drawChessboard - draws outerlining
+drawAllRectangles - draws all the black squares
+drawRectangle - draws one black square
+drawRow - turtle - draws a row of black squares
+draw - draws the whole chess board
+
+
+********************************************
+Task 2
+requirement specification
+    have user enter in a password, and check if that password meets the requirements
+    password can't have
+        less than 8 characters
+        consist of only letters and digits
+        must contain atleast 2 digits
+        cannot contain the word password
+        cannot end in 123
+system analysis
+    no formulas
+system design
+    1. get user to enter in password
+    2. define setters and getters, password
+    3. have isValid check if the password meets requirements
+    4. if so have the program print out "Password created!"
+    5. if not have the program print out what requriements weren't met
+implimentation - code
+test1 - passed
+    input - !dfs1
+    ouput - password can only have letter / numbers
+            password is too short
+            password needs atleast 2 digits
+test2 - failed
+    input - 321asdf654
+    ouput - Password created
+
+
+Password
+***********
+valid - boolean
+message - str
+password - str
+*************
+isvalid - returns boolean on if password is valid
+setPassword - has user set password
+getErrorMessege - compiles everything wrong about your password
+checkNums - checks how many digits are in your password
+getMessage - returns message compiled from getErrorMessage
+main - determines the truth value of password, outputs message accordingly

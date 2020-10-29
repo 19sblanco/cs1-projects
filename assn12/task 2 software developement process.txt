@@ -1,0 +1,41 @@
+**********
+Account
+**********
+
+**********
+self.id = int
+self.balance = int
+self.annualInterestRate = int
+**********
+
+**********
+setID = set id
+getID = get id
+setBalance = set balance
+getBalance = get balance
+setAnnualInterestRate = set annual interest rate
+getAnnualInterestRate = get annual interest rate
+getMonthlyInterestRate = get monthly interest rate
+getMonthlyInterest = get monthly interest
+withdraw = pulling money from the account
+deposit = putting money in the account
+********
+
+requirement specification
+create a program that will ahve users enter in information then have a class make it so, you can display id, balance
+annualinterestrate, monthly interest rate, monthly interest, withdraw money, deposit money, exit
+
+system analysis
+no formulas
+
+system design
+1. make a class named account
+2. create instant variables
+    a. id, balance, annual interest rate
+3. create the functions above
+4. in main file create a while loop for input on account
+    a. exit when data is put in correctly
+5. create a while loop for menu
+6. look at menu on canvas
+7. make that
+8. create an exit option, when selected, makes while loop false

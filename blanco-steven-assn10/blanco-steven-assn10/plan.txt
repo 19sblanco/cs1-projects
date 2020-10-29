@@ -1,0 +1,31 @@
+1. requirement specification
+    create a program that takes input from user: height, width, and location
+    of a chessboard. accomplish this with making a module called chessboard.py
+
+2. system analysis
+    no formulas
+
+3. system design
+    1. import turtle
+    2. create module called chess board
+        a. define drawChessboard()
+            i. should just be the outline
+        b. define drawAllRectangles()
+            i. based off the user input
+            ii. 8x8 black and white
+            iii. it can be easier to call function twice
+        c. define drawRectangle()
+            i. draw single black rectangle
+            ii. should repeat with loop
+            iii. not sure but will probably be in drawAllRectangles()
+    3. put default settings inside the drawChessboard() function
+    4. have drawAllRectangles() carry over the settings from drawChessboard()
+    5. have drawRectangle() be called by drawAllRectangles()
+    6. for drawAllRectangles()
+        a. loop through a row of rectangles being drawn
+        b. loop through a row of rectangles being drawn
+        c. move the cursor starting postion
+        d. repeat steps a and b
+4. code
+5. test
+    it should look like a chessboard, given the dimensions
